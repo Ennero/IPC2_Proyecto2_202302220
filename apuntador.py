@@ -60,6 +60,11 @@ class listita:  # La listita para las filas
             cadena += str(aux.dato) #proceso de concatenación por cada elemento de la fila
             aux = aux.siguiente
         return cadena
+
+    def vaciar(self):
+        self.inicio = None
+        self.fin = None
+        self.tamaño = 0
     
     def eliminar(self, pos):
         aux = self.inicio
@@ -77,6 +82,51 @@ class listita:  # La listita para las filas
             aux.anterior.siguiente = aux.siguiente #el anterior tendrá como siguiente el siguiente al actual
             aux.siguiente.anterior = aux.anterior
         self.tamaño -= 1 #Reduzco el tamaño de la lista
+
+
+class maquina:
+    def __init__(self,nombre,lineas,listadoProductos,tiempo,cantidadC):
+        self.nombre=nombre
+        self.lineas=lineas
+        self.listadoProductos=listadoProductos
+        self.tiempo=tiempo
+
+class linea:
+    def __init__(self,nombre,componentes):
+        self.nombre=nombre
+        self.componentes=componentes
+
+
+class producto:
+    def __init__(self,nombre,elaboracion):
+        self.nombre=nombre
+        self.elaboracion=elaboracion
+
+class simulacion:
+    def __init__(self,maquina,producto,tiempo):
+        self.maquina=maquina
+        self.producto=producto
+        self.tiempo=tiempo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 class matriz:
