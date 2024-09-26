@@ -12,7 +12,6 @@ listaMaquinas=ap.listita()
 
 def limpiar(): #Inicializa las listas
     listaMaquinas.vaciar()
-    productos.vaciar()
 
 def cargarXML(ruta): 
     global listaMaquinas
@@ -66,21 +65,10 @@ def cargarXML(ruta):
     except Exception as e:
         print(f"Error al cargar el archivo: {e}")
 
-    
-    #Comprobando que todo se guardó correctamente :)
-    '''j=0
-    while j<listaMaquinas.tamaño:
-        listaMaquinas.encontrar(j).mostrar()
-        j+=1'''
-    '''j=0
-    while j<productos.tamaño:
-        productos.encontrar(j).encontrar(0).mostrar()
-        j+=1'''
-    '''print(productos.encontrar(0).encontrar(0).encontrar(1))'''
-    #-------------------------------------------------------
+
 
 def simular(): #Función que simula el proceso
-    global listaMaquinas, productos, salida
+    global listaMaquinas, salida
     contadorMaquinas=0
 
 
@@ -95,6 +83,12 @@ def star(): #Función que se encarga de hacer el grafo
     cargarXML(ruta)
     print(listaMaquinas.tamaño)
     #print(listaMaquinas.encontrar(1).listadoProductos.encontrar(1).nombre)
+
+    # Iniciando la simulación
+    print(listaMaquinas.encontrar(2).nombre)
+    print(listaMaquinas.encontrar(2).listadoProductos.encontrar(0).nombre)
+    probando=ap.simulacion(listaMaquinas.encontrar(2),listaMaquinas.encontrar(2).listadoProductos.encontrar(0))
+    probando.simular()
 
 star()
 

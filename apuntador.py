@@ -4,7 +4,6 @@ class nodo:  # El nodito
         self.siguiente = siguiente  # apuntadores
         self.anterior = anterior
 
-
 #Es basicamente el mismo código de mi proyecto anterior pero con doblemente anidado
 #Ya lo había hecho así que lo uso xd
 
@@ -67,46 +66,180 @@ class listita:  # La listita para las filas
         self.tamaño = 0
     
     def eliminar(self, pos):
+        if pos >= self.tamaño or pos < 0:  # Verifico si la posición es válida
+            return
         aux = self.inicio
         cont = 0
-        while cont < pos: # Ubico donde quiero borrar el nodo
+        while cont < pos:
             aux = aux.siguiente
             cont += 1
         if aux == self.inicio:
-            aux.siguiente.anterior = None
-            self.inicio=aux.siguiente #el inicio será el siguiente al actual
+            self.inicio = aux.siguiente
+            if self.inicio:
+                self.inicio.anterior = None
         elif aux == self.fin:
-            aux.anterior.siguiente = None
-            self.fin=aux.anterior
+            self.fin = aux.anterior
+            if self.fin:
+                self.fin.siguiente = None
         else:
-            aux.anterior.siguiente = aux.siguiente #el anterior tendrá como siguiente el siguiente al actual
+            aux.anterior.siguiente = aux.siguiente
             aux.siguiente.anterior = aux.anterior
-        self.tamaño -= 1 #Reduzco el tamaño de la lista
+        self.tamaño -= 1
 
 
 class maquina:
     def __init__(self,nombre,lineas,listadoProductos,tiempo,cantidadC):
         self.nombre=nombre
-        self.lineas=lineas
+        self.lineas=int(lineas)
         self.listadoProductos=listadoProductos
-        self.tiempo=tiempo
+        self.tiempo=int(tiempo)
+        self.cantidadC=int(cantidadC)
 
-class linea:
-    def __init__(self,nombre,componentes):
+class brazo:
+    def __init__(self,nombre):
         self.nombre=nombre
-        self.componentes=componentes
-
+        self.posicionActual=0
+        self.estado=False
+        self.bloqueo=False
 
 class producto:
     def __init__(self,nombre,elaboracion):
         self.nombre=nombre
         self.elaboracion=elaboracion
 
+
 class simulacion:
-    def __init__(self,maquina,producto,tiempo):
-        self.maquina=maquina
-        self.producto=producto
-        self.tiempo=tiempo
+    def __init__(self, maquina, producto):  # Constructor de la simulación para UN PRODUCTO
+        self.maquina = maquina
+        self.producto = producto
+        self.tiempo = 0
+        self.elaborar = self.crearLista()
+        self.posicionesBrazos = self.crearLineas()
+        self.coldDown = 0
+
+    # Función para crear la lista de elaboración
+    def crearLista(self):
+        listaElaborar = listita()
+        instrucciones = self.producto.elaboracion.split()
+        for i in instrucciones:
+            tupla = listita()  # Creo una lista para guardar la instrucción
+            l = int(i[1])  # Línea
+            tupla.agregar(l)
+            c = int(i[3])  # Componente
+            tupla.agregar(c)
+            listaElaborar.agregar(tupla)
+        return listaElaborar
+
+    # Función para crear la lista de brazos en las líneas
+    def crearLineas(self):
+        listaBrazos = listita()
+        for i in range(self.maquina.lineas):
+            brazo_linea = brazo(i + 1)  # Creamos un brazo para cada línea
+            listaBrazos.agregar(brazo_linea)
+        return listaBrazos
+
+    # Función principal que simula el proceso
+    def simular(self):
+        cuenta = 0  # Contador de tiempo
+
+        # Mientras haya elementos en la lista de elaboración
+        ensamble = False
+        nombreBloqueado = ""
+        eliminar=False
+        while self.elaborar.tamaño > 0:
+            cuenta += 1
+
+            print(f"Tiempo: {cuenta}")  # Imprimir el tiempo
+
+            #ciclo para desocupar los brazos
+            for i in range(self.posicionesBrazos.tamaño):
+                brazo=self.posicionesBrazos.encontrar(i)
+                brazo.estado=False
+
+
+            # Recorremos la lista de elaboración
+            for i in range(self.elaborar.tamaño):
+                instruccion = self.elaborar.encontrar(i)  # Ubico la tupla
+                linea = instruccion.encontrar(0)  # Línea
+                componente = instruccion.encontrar(1)  # Componente
+                print(f"Línea: {linea} Componente: {componente}")
+
+                # Recorremos la lista de brazos
+                for j in range(self.posicionesBrazos.tamaño):
+                    brazo = self.posicionesBrazos.encontrar(j)  # Ubico el brazo
+
+
+
+
+                    if brazo.nombre == linea:
+                        print(f"Brazo: {brazo.nombre} en la línea {brazo.posicionActual}")
+                        if not brazo.estado:  # Si el brazo está desocupado
+                            brazo.estado = True  # Lo ocupo
+                            
+                            if brazo.posicionActual < componente:  # Si la posición actual es menor al componente
+                                
+                                if not brazo.bloqueo:  # Si no está bloqueado
+                                    brazo.posicionActual += 1  # Avanzo el brazo
+                                    print(f"Brazo: {brazo.nombre} avanzando a la posición {brazo.posicionActual}")
+                            elif brazo.posicionActual == componente:  # Si estamos en el componente
+                                if not ensamble:  # Si no se está ensamblando
+                                    ensamble = True  # Se ensambla
+                                    print(f"Ensamble de producto en la línea {linea}")
+                                    brazo.bloqueo = True  # El brazo se desocupa
+                                    nombreBloqueado = brazo.nombre
+
+
+                                    posParaEliminar = i
+                                    eliminar=True
+
+
+                                    #self.elaborar.eliminar(i)  # Eliminamos la tarea completada
+                                    self.coldDown = self.maquina.tiempo+1  # Iniciamos el tiempo de espera
+                            else:  # Si la posición actual es mayor al componente
+                                if not brazo.bloqueo: # Si no está bloqueado
+                                    brazo.posicionActual -= 1  # Retrocedemos el brazo
+                                    print(f"Brazo: {brazo.nombre} retrocediendo a la posición {brazo.posicionActual}")
+            cuenta=+1
+
+            if eliminar:
+                self.elaborar.eliminar(posParaEliminar)
+                eliminar=False
+                print("Tarea eliminada")
+
+            # Control de tiempo de espera (coldown)
+            if self.coldDown > 0:
+                print(f"Enfriamiento: {self.coldDown}")
+                self.coldDown -= 1
+            else:
+                for j in range(self.posicionesBrazos.tamaño):
+                    brazo = self.posicionesBrazos.encontrar(j)
+                    if brazo.nombre == nombreBloqueado:
+                        brazo.bloqueo = False
+                        print(f"Brazo {brazo.nombre} desbloqueado")
+
+            print("------------------------------------------------------")
+                
+
+            
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
