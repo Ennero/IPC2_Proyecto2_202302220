@@ -146,7 +146,7 @@ class simulacion:
         ensamble = False
         nombreBloqueado = ""
         eliminar=False
-        while self.elaborar.tamaño > 0:
+        while self.elaborar.tamaño > 0 or self.coldDown > 0:
             cuenta += 1
 
             print(f"Tiempo: {cuenta}")  # Imprimir el tiempo
@@ -173,7 +173,7 @@ class simulacion:
 
                     if brazo.nombre == linea:
                         print(f"Brazo: {brazo.nombre} en la línea {brazo.posicionActual}")
-                        if not brazo.estado:  # Si el brazo está desocupado
+                        if not brazo.estado and ( not brazo.bloqueo):  # Si el brazo está desocupado
                             brazo.estado = True  # Lo ocupo
                             
                             if brazo.posicionActual < componente:  # Si la posición actual es menor al componente
@@ -182,7 +182,7 @@ class simulacion:
                                     brazo.posicionActual += 1  # Avanzo el brazo
                                     print(f"Brazo: {brazo.nombre} avanzando a la posición {brazo.posicionActual}")
                             elif brazo.posicionActual == componente:  # Si estamos en el componente
-                                if not ensamble:  # Si no se está ensamblando
+                                if not ensamble and (i==0):  # Si no se está ensamblando
                                     ensamble = True  # Se ensambla
                                     print(f"Ensamble de producto en la línea {linea}")
                                     brazo.bloqueo = True  # El brazo se desocupa
@@ -194,12 +194,13 @@ class simulacion:
 
 
                                     #self.elaborar.eliminar(i)  # Eliminamos la tarea completada
-                                    self.coldDown = self.maquina.tiempo+1  # Iniciamos el tiempo de espera
+                                    self.coldDown = self.maquina.tiempo-1  # Iniciamos el tiempo de espera
+                                else:
+                                    print("Ensamble en proceso o a la espera de ensamble")
                             else:  # Si la posición actual es mayor al componente
                                 if not brazo.bloqueo: # Si no está bloqueado
                                     brazo.posicionActual -= 1  # Retrocedemos el brazo
                                     print(f"Brazo: {brazo.nombre} retrocediendo a la posición {brazo.posicionActual}")
-            cuenta=+1
 
             if eliminar:
                 self.elaborar.eliminar(posParaEliminar)
@@ -215,7 +216,9 @@ class simulacion:
                     brazo = self.posicionesBrazos.encontrar(j)
                     if brazo.nombre == nombreBloqueado:
                         brazo.bloqueo = False
+                        nombreBloqueado = ""
                         print(f"Brazo {brazo.nombre} desbloqueado")
+                        ensamble = False
 
             print("------------------------------------------------------")
                 
