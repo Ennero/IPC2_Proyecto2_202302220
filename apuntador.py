@@ -127,7 +127,7 @@ class simulacion:
             tupla.agregar(l)
             c = int(i[3])  # Componente
             tupla.agregar(c)
-            listaElaborar.agregar(tupla)
+            listaElaborar.agregar(tupla) # Agrego la instrucción a la lista
         return listaElaborar
 
     # Función para crear la lista de brazos en las líneas
@@ -146,16 +146,14 @@ class simulacion:
         ensamble = False
         nombreBloqueado = ""
         eliminar=False
-        while self.elaborar.tamaño > 0 or self.coldDown > 0:
-            cuenta += 1
-
+        while self.elaborar.tamaño > 0 or self.coldDown > 0: # Mientras haya elementos en la lista de elaboración
+            cuenta += 1 # Aumentamos el tiempo
             print(f"Tiempo: {cuenta}")  # Imprimir el tiempo
 
             #ciclo para desocupar los brazos
-            for i in range(self.posicionesBrazos.tamaño):
-                brazo=self.posicionesBrazos.encontrar(i)
-                brazo.estado=False
-
+            for i in range(self.posicionesBrazos.tamaño): # Recorremos la lista de brazos
+                brazo=self.posicionesBrazos.encontrar(i) # Ubico el brazo
+                brazo.estado=False # Lo desocupo
 
             # Recorremos la lista de elaboración
             for i in range(self.elaborar.tamaño):
@@ -167,9 +165,6 @@ class simulacion:
                 # Recorremos la lista de brazos
                 for j in range(self.posicionesBrazos.tamaño):
                     brazo = self.posicionesBrazos.encontrar(j)  # Ubico el brazo
-
-
-
 
                     if brazo.nombre == linea:
                         print(f"Brazo: {brazo.nombre} en la línea {brazo.posicionActual}")
@@ -186,12 +181,10 @@ class simulacion:
                                     ensamble = True  # Se ensambla
                                     print(f"Ensamble de producto en la línea {linea}")
                                     brazo.bloqueo = True  # El brazo se desocupa
-                                    nombreBloqueado = brazo.nombre
+                                    nombreBloqueado = brazo.nombre # Guardo el nombre del brazo bloqueado
 
-
-                                    posParaEliminar = i
-                                    eliminar=True
-
+                                    posParaEliminar = i # Guardo la posición para eliminar
+                                    eliminar=True # Elimino la tarea
 
                                     #self.elaborar.eliminar(i)  # Eliminamos la tarea completada
                                     self.coldDown = self.maquina.tiempo-1  # Iniciamos el tiempo de espera
@@ -202,9 +195,9 @@ class simulacion:
                                     brazo.posicionActual -= 1  # Retrocedemos el brazo
                                     print(f"Brazo: {brazo.nombre} retrocediendo a la posición {brazo.posicionActual}")
 
-            if eliminar:
-                self.elaborar.eliminar(posParaEliminar)
-                eliminar=False
+            if eliminar: # Si se debe eliminar la tarea
+                self.elaborar.eliminar(posParaEliminar) # Eliminamos la tarea completada
+                eliminar=False # Ya no se debe eliminar
                 print("Tarea eliminada")
 
             # Control de tiempo de espera (coldown)
@@ -212,13 +205,13 @@ class simulacion:
                 print(f"Enfriamiento: {self.coldDown}")
                 self.coldDown -= 1
             else:
-                for j in range(self.posicionesBrazos.tamaño):
-                    brazo = self.posicionesBrazos.encontrar(j)
-                    if brazo.nombre == nombreBloqueado:
-                        brazo.bloqueo = False
-                        nombreBloqueado = ""
+                for j in range(self.posicionesBrazos.tamaño): # Recorremos la lista de brazos
+                    brazo = self.posicionesBrazos.encontrar(j) # Ubico el brazo
+                    if brazo.nombre == nombreBloqueado: # Si el brazo bloqueado es el que se está buscando
+                        brazo.bloqueo = False # Se desbloquea
+                        nombreBloqueado = "" 
                         print(f"Brazo {brazo.nombre} desbloqueado")
-                        ensamble = False
+                        ensamble = False # Se desbloquea para que se pueda ensamblar
 
             print("------------------------------------------------------")
                 
