@@ -95,12 +95,15 @@ class maquina:
         self.tiempo=int(tiempo)
         self.cantidadC=int(cantidadC)
 
+
 class brazo:
     def __init__(self,nombre):
         self.nombre=nombre
         self.posicionActual=0
         self.estado=False
         self.bloqueo=False
+        self.mensaje="No hacer nada"
+
 
 class producto:
     def __init__(self,nombre,elaboracion):
@@ -116,6 +119,7 @@ class simulacion:
         self.elaborar = self.crearLista()
         self.posicionesBrazos = self.crearLineas()
         self.coldDown = 0
+        self.reporte=None
 
     # Función para crear la lista de elaboración
     def crearLista(self):
@@ -123,9 +127,13 @@ class simulacion:
         instrucciones = self.producto.elaboracion.split()
         for i in instrucciones:
             tupla = listita()  # Creo una lista para guardar la instrucción
-            l = int(i[1])  # Línea
+
+            #Divido las intrucciones en L y C
+            divi=i.split("C")
+
+            l =int(divi[0][1:]) # Línea
             tupla.agregar(l)
-            c = int(i[3])  # Componente
+            c = int(divi[1])  # Componente
             tupla.agregar(c)
             listaElaborar.agregar(tupla) # Agrego la instrucción a la lista
         return listaElaborar
@@ -146,14 +154,18 @@ class simulacion:
         ensamble = False
         nombreBloqueado = ""
         eliminar=False
+        Tiempos=listita() #Creo una Lista para guardar los datos de las listas
         while self.elaborar.tamaño > 0 or self.coldDown > 0: # Mientras haya elementos en la lista de elaboración
             cuenta += 1 # Aumentamos el tiempo
             print(f"Tiempo: {cuenta}")  # Imprimir el tiempo
+            tiempo=listita() #Creo una lista para guardar los datos de las líneas
+            tiempo.agregar(cuenta) #Agrego el tiempo a la lista
 
-            #ciclo para desocupar los brazos
+            #ciclo para desocupar los brazos y limpiar los mensajes
             for i in range(self.posicionesBrazos.tamaño): # Recorremos la lista de brazos
                 brazo=self.posicionesBrazos.encontrar(i) # Ubico el brazo
                 brazo.estado=False # Lo desocupo
+                brazo.mensaje="No hacer nada"
 
             # Recorremos la lista de elaboración
             for i in range(self.elaborar.tamaño):
@@ -175,11 +187,15 @@ class simulacion:
                                 
                                 if not brazo.bloqueo:  # Si no está bloqueado
                                     brazo.posicionActual += 1  # Avanzo el brazo
+                                    brazo.mensaje= f"Mover brazo - componente {brazo.posicionActual}" #Guardo el mensaje
                                     print(f"Brazo: {brazo.nombre} avanzando a la posición {brazo.posicionActual}")
+
                             elif brazo.posicionActual == componente:  # Si estamos en el componente
                                 if not ensamble and (i==0):  # Si no se está ensamblando
                                     ensamble = True  # Se ensambla
-                                    print(f"Ensamble de producto en la línea {linea}")
+                                    brazo.mensaje= f"Ensamblar componente {brazo.posicionActual}" #Guardo el mensaje
+                                    print(brazo.mensaje)
+
                                     brazo.bloqueo = True  # El brazo se desocupa
                                     nombreBloqueado = brazo.nombre # Guardo el nombre del brazo bloqueado
 
@@ -193,7 +209,10 @@ class simulacion:
                             else:  # Si la posición actual es mayor al componente
                                 if not brazo.bloqueo: # Si no está bloqueado
                                     brazo.posicionActual -= 1  # Retrocedemos el brazo
-                                    print(f"Brazo: {brazo.nombre} retrocediendo a la posición {brazo.posicionActual}")
+                                    brazo.mensaje= f"Mover brazo - componente {brazo.posicionActual}" #Guardo el mensaje
+                                    print(brazo.mensaje)
+
+
 
             if eliminar: # Si se debe eliminar la tarea
                 self.elaborar.eliminar(posParaEliminar) # Eliminamos la tarea completada
@@ -213,102 +232,26 @@ class simulacion:
                         print(f"Brazo {brazo.nombre} desbloqueado")
                         ensamble = False # Se desbloquea para que se pueda ensamblar
 
+            #Ciclo para generar la lista de posiciones de los brazos
+            for i in range(self.posicionesBrazos.tamaño): # Recorremos la lista de brazos
+                brazo=self.posicionesBrazos.encontrar(i) # Ubico el brazo
+                tiempo.agregar(brazo.mensaje) # Agrego el mensaje a la lista
+
+            Tiempos.agregar(tiempo) # Agrego la lista de mensajes a la lista de tiempos
+
             print("------------------------------------------------------")
-                
-
-            
-
+        self.reporte=Tiempos #Guardo la lista de tiempos en el reporte        
+        
 
 
 
+        #Probando que se guardó bien en la matriz :)
+        for i in range(self.reporte.tamaño): # Recorremos la lista de tiempos
+            for j in range(self.reporte.encontrar(i).tamaño):
+                print(self.reporte.encontrar(i).encontrar(j), end=" | ") # Imprimimos el mensaje
+            print() # Salto de línea
+        #---------------------------------------------------------------------------------------
 
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-class matriz:
-    def __init__(self, nombre, n, m):
-        self.nombre = nombre
-        self.n = n  # cantidad de filas
-        self.m = m  # cantidad de columnas
-        self.filas = listita()  # lista de filas
-        relleno = 2023  # Es para rellenar la matriz con algo que sea entero
-        contadorn = 0
-        while contadorn < n:
-            contadorm = 0
-            miami = listita() # lista de columnas
-            while contadorm < m: 
-                miami.agregar(relleno) # Aquí se rellena agrega una celda a la columna
-                contadorm += 1 #Hasta que se tiene toda la columna de nodos
-            self.filas.agregar(miami) # Aquí se rellena la fila con la columna
-            contadorn += 1 # Hasta que termine de tener todas las filas deseadas :)
-
-    def mostrar(self):  # Solo está hecha para ver si lo hice bien (no sirve para nada más)
-        contadoro = 0
-        while contadoro < self.n: 
-            contadori = 0
-            print("Fila: ", contadoro + 1)
-            while contadori < self.m:
-                print(self.filas.encontrar(contadoro).encontrar(contadori))
-                contadori += 1
-            contadoro += 1
-
-    def encontrar(self, x, y): #Encuentra el dato en la posición indicada
-        return self.filas.encontrar(x).encontrar(y) 
-
-    def modificar(self, x, y, dato): #Modifica el dato en la posición indicada
-        self.filas.encontrar(x).modificar(y, dato) 
-
-    def encontrarF(self, x): #Encuentra la fila en la posición indicada
-        return self.filas.encontrar(x) 
-    
-    def encontrarC(self, y): #Encuentra la columna en la posición indicada
-        return self.columnas.encontrar(y) 
-
-    def sumaModificaEliminaF(self,pos1, pos2): #Suma las filas pos1 y pos2 y lo coloca en la fila pos1
-        contador=0
-
-        while contador<self.m: #Recorre toda la fila y va sumando los elementos de las dos filas en las posiciones indicadas
-            luis=self.encontrarF(pos1).encontrar(contador)
-            fonsi=self.encontrarF(pos2).encontrar(contador)
-            luisfonsi=luis+fonsi #guardando la suma de los dos valores
-            self.encontrarF(pos1).modificar(contador,luisfonsi) #modificando la fila en la posición indicada---------------------------------------------------------------
-            #self.modificar(x,contador,luisfonsi) #Es una opción alternativa que se quedará por cualquier coas :)
-            contador+=1
-        self.filas.eliminar(pos2) #Eliminando la fila que se sumó
-        self.n-=1 #bajando la cantidad de filas
 
 
 

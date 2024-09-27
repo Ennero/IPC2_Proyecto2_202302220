@@ -18,6 +18,15 @@ def home(): #Función de la página de inicio
     
     return render_template('page.html') #Mostrar el html de la página
 
+@app.route('/acercade') #Página de acerca de
+def acercade():
+    return render_template('acercade.html')
+
+@app.route('/estudiante') #Página de información del estudiante
+def estudiante():
+    return render_template('estudiante.html')
+
+
 
 @app.route('/cargar', methods=['GET','POST']) #Página de carga
 def cargar():
@@ -28,17 +37,10 @@ def cargar():
     #Aquí meteré más cosas
 
 
-
-
-
         return redirect(url_for('home'))
     
     return render_template('ruta.html')
 
-@app.route('/mensaje', methods=['GET','POST']) #Página de mensajes
-def mensaje():
-    if request.method == 'POST':
-        mensaje=request.form['mensaje'] #Lee el mensaje
 
 
 if __name__ == '__main__':

@@ -9,7 +9,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-        </script>
+    </script>
 </head>
 
 <body class="bg-primary-subtle">
@@ -26,7 +26,7 @@
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
                     data-bs-toggle="dropdown" aria-expanded="false">
-                    Dropdown
+                    Simular maquina
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <li><a class="dropdown-item" href="#">Opción 1</a></li>
@@ -34,13 +34,24 @@
                     <li><a class="dropdown-item" href="#">Opción 3</a></li>
                 </ul>
             </div>
-
-
-
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Ayuda
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="{{ url_for('acercade') }}">Acerca de la aplicación</a></li>
+                    <li><a class="dropdown-item" href="{{ url_for('estudiante') }}">Información del estudiante</a></li>
+                    <li><a class="dropdown-item" href="{{ url_for('static', filename='ensayo.pdf') }}" target="_blank">Documentación</a></li>
+                </ul>
+            </div>
+            <form method="POST"></form>
+                <input type="hidden" name="id" value="cargar">
+                <button type="submit" class="btn btn-danger">Generar Archivo de Salida</button>
+            </form>
+            </div>
         </div>
     </nav>
-
-
 </body>
 
 </html>

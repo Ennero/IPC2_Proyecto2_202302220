@@ -77,7 +77,7 @@ def simular(): #Función que simula el proceso
     pass
 
 def star(): #Función que se encarga de hacer el grafo
-    ruta="C:\prueba1.xml"
+    ruta="ArchivoPrueba.xml"
     cargarXML(ruta)
     print(listaMaquinas.tamaño)
     cargarXML(ruta)
@@ -87,7 +87,12 @@ def star(): #Función que se encarga de hacer el grafo
     # Iniciando la simulación
     print(listaMaquinas.encontrar(0).nombre)
     print(listaMaquinas.encontrar(0).listadoProductos.encontrar(1).nombre)
-    probando=ap.simulacion(listaMaquinas.encontrar(0),listaMaquinas.encontrar(0).listadoProductos.encontrar(1))
+    probando=ap.simulacion(listaMaquinas.encontrar(0),listaMaquinas.encontrar(0).listadoProductos.encontrar(0))
+    
+    #letras=listaMaquinas.encontrar(2).listadoProductos.encontrar(0).elaboracion.split()
+    #primero=letras[0].split("C")
+    #print(primero)
+
     probando.simular()
 
 star()
