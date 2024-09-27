@@ -154,9 +154,13 @@ class simulacion:
         ensamble = False
         nombreBloqueado = ""
         eliminar=False
+        
         Tiempos=listita() #Creo una Lista para guardar los datos de las listas
-        while self.elaborar.tamaño > 0 or self.coldDown > 0: # Mientras haya elementos en la lista de elaboración
+        while self.elaborar.tamaño > 0 or self.coldDown >= 0: # Mientras haya elementos en la lista de elaboración
             cuenta += 1 # Aumentamos el tiempo
+
+            print(self.coldDown)
+
             print(f"Tiempo: {cuenta}")  # Imprimir el tiempo
             tiempo=listita() #Creo una lista para guardar los datos de las líneas
             tiempo.agregar(cuenta) #Agrego el tiempo a la lista
@@ -164,8 +168,13 @@ class simulacion:
             #ciclo para desocupar los brazos y limpiar los mensajes
             for i in range(self.posicionesBrazos.tamaño): # Recorremos la lista de brazos
                 brazo=self.posicionesBrazos.encontrar(i) # Ubico el brazo
-                brazo.estado=False # Lo desocupo
-                brazo.mensaje="No hacer nada"
+
+                if brazo.nombre != nombreBloqueado: # Si el brazo bloqueado es el que se está buscando
+                    brazo.estado=False # Lo desocupo
+                    brazo.mensaje="No hacer nada"
+                else:
+                    brazo.estado=False # Lo ocupo
+
 
             # Recorremos la lista de elaboración
             for i in range(self.elaborar.tamaño):
@@ -224,6 +233,7 @@ class simulacion:
                 print(f"Enfriamiento: {self.coldDown}")
                 self.coldDown -= 1
             else:
+                self.coldDown = -1
                 for j in range(self.posicionesBrazos.tamaño): # Recorremos la lista de brazos
                     brazo = self.posicionesBrazos.encontrar(j) # Ubico el brazo
                     if brazo.nombre == nombreBloqueado: # Si el brazo bloqueado es el que se está buscando

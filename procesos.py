@@ -87,7 +87,7 @@ def star(): #Función que se encarga de hacer el grafo
     # Iniciando la simulación
     print(listaMaquinas.encontrar(0).nombre)
     print(listaMaquinas.encontrar(0).listadoProductos.encontrar(1).nombre)
-    probando=ap.simulacion(listaMaquinas.encontrar(0),listaMaquinas.encontrar(0).listadoProductos.encontrar(0))
+    probando=ap.simulacion(listaMaquinas.encontrar(1),listaMaquinas.encontrar(1).listadoProductos.encontrar(1))
     
     #letras=listaMaquinas.encontrar(2).listadoProductos.encontrar(0).elaboracion.split()
     #primero=letras[0].split("C")
