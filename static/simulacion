@@ -1,0 +1,4 @@
+digraph "Proceso de Sumulación" {
+	node [shape=rectangle]
+	rankdir=LR
+}

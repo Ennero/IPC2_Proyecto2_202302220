@@ -1,4 +1,3 @@
-from graphviz import Digraph
 import xml.etree.ElementTree as ET
 import apuntador as ap
 
@@ -86,8 +85,11 @@ def simular(maquina,producto): #Función que simula el proceso
     posMaquina=int(encontrarPosMaquinaPorNombre(maquina)) #Encuentra la posición de la máquina por nombre
     productito=encontrarProductoPorNombre(producto,posMaquina) #Encuentra el producto por nombre
     simular1=ap.simulacion(maquinita,productito) #Crea la simulación
-    simular1.simular() #Simula el proceso
-    simular1.reportarConTiempo(22) #Reporta el proceso
+    #simular1.simular() #Simula el proceso
+    simular1.simularPorSegundos(21) #Simula el proceso
+    simular1.reportar() #Reporta el proceso
+    simular1.graficar() #Grafica la lista de procesos
+    #simular1.reportarConTiempo(22) #Reporta el proceso
 
     
 
