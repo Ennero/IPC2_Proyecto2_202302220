@@ -126,6 +126,8 @@ class simulacion:
         self.posicionesBrazos = self.crearLineas()
         self.coldDown = 0
         self.reporte=None
+        self.matriz=None
+        self.tiempoOptimo=0
 
     # Función para crear la lista de elaboración
     def crearLista(self):
@@ -256,18 +258,70 @@ class simulacion:
             Tiempos.agregar(tiempo) # Agrego la lista de mensajes a la lista de tiempos
 
             print("------------------------------------------------------")
-        self.reporte=Tiempos #Guardo la lista de tiempos en el reporte        
+        self.matriz=Tiempos #Guardo la lista de tiempos en el reporte        
         
 
-
-
         #Probando que se guardó bien en la matriz :)
-        for i in range(self.reporte.tamaño): # Recorremos la lista de tiempos
-            for j in range(self.reporte.encontrar(i).tamaño):
-                print(self.reporte.encontrar(i).encontrar(j), end=" | ") # Imprimimos el mensaje
+        for i in range(self.matriz.tamaño): # Recorremos la lista de tiempos
+            for j in range(self.matriz.encontrar(i).tamaño):
+                print(self.matriz.encontrar(i).encontrar(j), end=" | ") # Imprimimos el mensaje
             print() # Salto de línea
         #---------------------------------------------------------------------------------------
+        self.tiempoOptimo=cuenta
+        print(cuenta)
 
+    def reportar(self): #Función para reportar el proceso
+        self.reporte='<table style="width:60%; border: 1px solid black; border-collapse: collapse;"\n'
+        self.reporte+='<tr>\n'
+        self.reporte+='<th style="border: 1px solid black; text-align: center; padding: 8px;">Tiempo</th>\n'
+        for i in range(self.maquina.lineas):
+            self.reporte+='<th style="border: 1px solid black; text-align: center; padding: 8px;">Linea '+str(i+1)+'</th>\n'
+
+        for i in range(self.matriz.tamaño): # Recorremos filas
+            self.reporte+='<tr>\n'
+            for j in range(self.matriz.encontrar(i).tamaño): # Recorremos las columnas de cada fila
+                self.reporte+='<td style="border: 1px solid black; text-align: center; padding: 8px;">'+str(self.matriz.encontrar(i).encontrar(j))+'</td>\n'
+            self.reporte+='</tr>\n'
+        self.reporte+='<tr>\n'
+        self.reporte+='<td style="border: 1px solid black; text-align: center; padding: 8px;" colspan="'+str(j+1)+'">El producto '+self.producto.nombre+' se puede elaborar óptimamente en '+str(i+1)+' segundos</td>\n'
+        self.reporte+='</table>\n'
+        print(self.reporte)
+
+
+#Voy a crear una cosa que cambie el reporte para no tener que complicarme :)
+
+    def reportarConTiempo(self,segundo):
+        self.reporte='<table style="width:60%; border: 1px solid black; border-collapse: collapse;"\n'
+        self.reporte+='<tr>\n'
+        self.reporte+='<th style="border: 1px solid black; text-align: center; padding: 8px;">Tiempo</th>\n'
+        for i in range(self.maquina.lineas):
+            self.reporte+='<th style="border: 1px solid black; text-align: center; padding: 8px;">Linea '+str(i+1)+'</th>\n'
+
+        if segundo<self.segundosOptimos:
+            for i in range(segundo): # Recorremos filas
+                self.reporte+='<tr>\n'
+                for j in range(self.matriz.encontrar(i).tamaño): # Recorremos las columnas de cada fila
+                    self.reporte+='<td style="border: 1px solid black; text-align: center; padding: 8px;">'+str(self.matriz.encontrar(i).encontrar(j))+'</td>\n'
+                self.reporte+='</tr>\n'
+        else:
+            for i in range(self.matriz.tamaño): # Recorremos filas
+                self.reporte+='<tr>\n'
+                for j in range(self.matriz.encontrar(i).tamaño): # Recorremos las columnas de cada fila
+                    self.reporte+='<td style="border: 1px solid black; text-align: center; padding: 8px;">'+str(self.matriz.encontrar(i).encontrar(j))+'</td>\n'
+                self.reporte+='</tr>\n'
+            for i in range(segundo-self.tiempoOptimo): # Recorremos filas
+                self.reporte+='<tr>\n'
+                for j in range(self.matriz.encontrar(i).tamaño): # Recorremos las columnas de cada fila
+                    self.reporte+='<td style="border: 1px solid black; text-align: center; padding: 8px;">'+str(self.matriz.encontrar(i).encontrar(j))+'</td>\n'
+                self.reporte+='</tr>\n'
+
+
+        self.reporte+='<tr>\n'
+        self.reporte+='<td style="border: 1px solid black; text-align: center; padding: 8px;" colspan="'+str(j+1)+'">El producto '+self.producto.nombre+' se puede elaborar óptimamente en '+str(i+1)+' segundos</td>\n'
+        self.reporte+='</table>\n'
+        print(self.reporte)
+
+    
 
 
 

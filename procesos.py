@@ -1,7 +1,6 @@
 from graphviz import Digraph
 import xml.etree.ElementTree as ET
 import apuntador as ap
-import app
 
 #Defino las listas que voy a utilizar
 #La estructura con la que guardaré todo es la siguiente:
@@ -17,7 +16,7 @@ producto=""
 
 
 def limpiar(): #Inicializa las listas
-    global listaMaquinas, carga
+    global listaMaquinas, carga, maquina, producto, seleccionado
     listaMaquinas.vaciar()
     carga=0
     maquina=""
@@ -82,24 +81,43 @@ def cargarXML(ruta):
 
 def simular(maquina,producto): #Función que simula el proceso
     global listaMaquinas, salida
+    print(maquina,producto) #Imprime la máquina y el producto
+    maquinita=encontrarMaquinaPorNombre(maquina) #Encuentra la máquina por nombre
+    posMaquina=int(encontrarPosMaquinaPorNombre(maquina)) #Encuentra la posición de la máquina por nombre
+    productito=encontrarProductoPorNombre(producto,posMaquina) #Encuentra el producto por nombre
+    simular1=ap.simulacion(maquinita,productito) #Crea la simulación
+    simular1.simular() #Simula el proceso
+    simular1.reportarConTiempo(22) #Reporta el proceso
 
     
 
 
 
-    pass
 
-def encontrarListaProductosPorMaquina(nombre): #Función que busca la 
+def encontrarListaProductosPorMaquina(nombre): #Función que busca la lista de la maquina por nombre
     global listaMaquinas
     for i in range(listaMaquinas.tamaño):
         if listaMaquinas.encontrar(i).nombre==nombre:
             return listaMaquinas.encontrar(i).listadoProductos
         
-def encontrarMaquinaPorNombre(nombre): #Función que busca la maquina por nombre
+def encontrarMaquinaPorNombre(nombre): #Función que busca la maquina por nombre (regresa)
     global listaMaquinas
     for i in range(listaMaquinas.tamaño):
         if listaMaquinas.encontrar(i).nombre==nombre:
             return listaMaquinas.encontrar(i)
+        
+def encontrarProductoPorNombre(nombre,posMaquina): #Función que busca el producto por su nombre 
+    global listaMaquinas
+    for i in range(listaMaquinas.encontrar(posMaquina).listadoProductos.tamaño):
+        if listaMaquinas.encontrar(posMaquina).listadoProductos.encontrar(i).nombre==nombre:
+            return listaMaquinas.encontrar(posMaquina).listadoProductos.encontrar(i)
+        
+def encontrarPosMaquinaPorNombre(nombre): #Función que busca la posición de la máquina por su nombre
+    global listaMaquinas
+    for i in range(listaMaquinas.tamaño):
+        if listaMaquinas.encontrar(i).nombre==nombre:
+            return i
+    
 
 def star(): #Función que se encarga de hacer el grafo
     ruta="ArchivoPrueba.xml"
@@ -120,6 +138,9 @@ def star(): #Función que se encarga de hacer el grafo
 
     probando.simular()
 
+cargarXML("ArchivoPrueba.xml")
+#Estoy simulando el monitor :)
 
+simular("Super Máquina 3000","CPU")
 
 
