@@ -36,6 +36,12 @@ class listita:  # La listita para las filas
             print(aux.dato)
             aux = aux.siguiente
 
+    def retornar(self):
+        aux = self.inicio
+        while aux is not None:
+            yield aux.dato  # Retorna el dato del nodo actual
+            aux = aux.siguiente
+
     def modificar(self, pos, dato):  # Para modificar un dato en una posición indicada
         aux = self.inicio
         cont = 0

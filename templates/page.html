@@ -10,30 +10,32 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
+
+    <style>
+        /* Asegúrate de que el body ocupe al menos el 100% de la pantalla */
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Asegúrate de que el contenido principal crezca para ocupar el espacio disponible */
+        .content {
+            flex: 1;
+        }
+
+        /* Asegúrate de que el footer esté en la parte inferior */
+        footer {
+            background-color: #f8f9fa;
+            padding: 1rem 0;
+            width: 100%;
+        }
+    </style>
 </head>
 
 <body class="bg-primary-subtle">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <form method="POST">
-                <input type="hidden" name="id" value="inicializar">
-                <button type="submit" class="btn btn-primary">Inicializar</button>
-            </form>
-            <form method="POST">
-                <input type="hidden" name="id" value="cargar">
-                <button type="submit" class="btn btn-primary">Cargar configuración de máquinas y productos</button>
-            </form>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    Simular maquina
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <li><a class="dropdown-item" href="#">Opción 1</a></li>
-                    <li><a class="dropdown-item" href="#">Opción 2</a></li>
-                    <li><a class="dropdown-item" href="#">Opción 3</a></li>
-                </ul>
-            </div>
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
                     data-bs-toggle="dropdown" aria-expanded="false">
@@ -42,16 +44,89 @@
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                     <li><a class="dropdown-item" href="{{ url_for('acercade') }}">Acerca de la aplicación</a></li>
                     <li><a class="dropdown-item" href="{{ url_for('estudiante') }}">Información del estudiante</a></li>
-                    <li><a class="dropdown-item" href="{{ url_for('static', filename='ensayo.pdf') }}" target="_blank">Documentación</a></li>
+                    <li><a class="dropdown-item" href="{{ url_for('static', filename='ensayo.pdf') }}"
+                            target="_blank">Documentación</a></li>
                 </ul>
             </div>
-            <form method="POST"></form>
+            <form method="POST">
+                <input type="hidden" name="id" value="inicializar">
+                <button type="submit" class="btn btn-success">Inicializar</button>
+            </form>
+            <form method="POST">
                 <input type="hidden" name="id" value="cargar">
+                <button type="submit" class="btn btn-primary">Cargar configuración de máquinas y productos</button>
+            </form>
+
+            <form method="POST">
+                <input type="hidden" name="id" value="generar">
                 <button type="submit" class="btn btn-danger">Generar Archivo de Salida</button>
             </form>
-            </div>
         </div>
     </nav>
+
+    <!-- Contenido principal -->
+    <div class="content container mt-5">
+        <div class="row">
+            <!-- Primera tarjeta -->
+            <div class="col-md-6">
+                <div class="card" style="height: 100%;">
+                    <div class="card-body text-center">
+                        <h1 class="card-title">SIMULACIÓN</h1>
+                        <div class="container">
+                            <form method="POST">
+                                <div class="mb-3">
+                                    <label for="maquina" class="form-label">Escoja una Máquina</label>
+                                    <select class="form-select" id="maquina" name="id">
+                                        <option selected>Elegir una Máquina</option>
+                                        
+                                        {% for maquina in lista.retornar() %}
+                                        <option value="{{ maquina.nombre }}">{{ maquina.nombre }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Aceptar</button>
+                            </form>
+
+                            <!-- Formulario de productos -->
+                            {% if listaProductos %}
+                            <form method="POST">
+                                <div class="mb-3">
+                                    <label for="producto" class="form-label">Escoja un Producto</label>
+                                    <select class="form-select" id="producto" name="producto">
+                                        <option selected>Elige un Producto</option>
+                                        {% for producto in listaProductos.retornar() %}
+                                        <option value="{{ producto.nombre }}">{{ producto.nombre }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Simular</button>
+                            </form>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Segunda tarjeta -->
+            <div class="col-md-6">
+                <div class="card" style="height: 100%;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Card title</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer siempre al final -->
+    <footer class="bg-body-tertiary text-center text-lg-start py-3">
+        <div class="container">
+            <span class="text-muted">&copy; 2024 Proyecto 2. Todos los derechos reservados.</span>
+        </div>
+    </footer>
 </body>
 
 </html>
