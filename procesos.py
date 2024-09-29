@@ -15,10 +15,15 @@ producto=""
 subido=False
 imagenActiva=False
 simulado=False
+lista=None
+
+#Alguna info de la simulación actual
+tiempoOptimo=0
+reporte=""
 
 
 def limpiar(): #Inicializa las listas
-    global listaMaquinas, carga, maquina, producto, seleccionado, subido, imagenActiva, simulado
+    global listaMaquinas, carga, maquina, producto, seleccionado, subido, imagenActiva, simulado, tiempoOptimo, reporte, lista
     listaMaquinas.vaciar()
     carga=0
     maquina=""
@@ -27,6 +32,9 @@ def limpiar(): #Inicializa las listas
     subido=False
     imagenActiva=False
     simulado=False
+    tiempoOptimo=0
+    reporte=""
+    lista=None
     
 
 
@@ -84,10 +92,8 @@ def cargarXML(ruta):
     except Exception as e:
         print(f"Error al cargar el archivo: {e}")
 
-
-
 def simular(maquina,producto): #Función que simula el proceso
-    global listaMaquinas
+    global listaMaquinas, tiempoOptimo, reporte, simulado
     print(maquina,producto) #Imprime la máquina y el producto
     maquinita=encontrarMaquinaPorNombre(maquina) #Encuentra la máquina por nombre
     posMaquina=int(encontrarPosMaquinaPorNombre(maquina)) #Encuentra la posición de la máquina por nombre
@@ -99,7 +105,24 @@ def simular(maquina,producto): #Función que simula el proceso
     #simular1.simularPorSegundos(30) #Simula el proceso
     simular1.reportar() #Reporta el proceso
     simular1.graficar() #Grafica la lista de procesos
+    tiempoOptimo=simular1.tiempoOptimo #Guarda el tiempo óptimo
+    reporte=simular1.reporte #Guarda el reporte
+    open("ReporteSimulación.html","w").write(reporte) #Guarda el reporte en un archivo html
 
+def simularPorSegundos(maquina,producto,segundo): #Función que simula el proceso por segundos
+    global listaMaquinas, tiempoOptimo, reporte, simulado
+    print(maquina,producto) #Imprime la máquina y el producto
+    maquinita=encontrarMaquinaPorNombre(maquina) #Encuentra la máquina por nombre
+    posMaquina=int(encontrarPosMaquinaPorNombre(maquina)) #Encuentra la posición de la máquina por nombre
+    productito=encontrarProductoPorNombre(producto,posMaquina) #Encuentra el producto por nombre
+
+    #Simulación
+    simular1=ap.simulacion(maquinita,productito) #Crea la simulación
+    simular1.simularPorSegundos(segundo) #Simula el proceso
+    simular1.reportar() #Reporta el proceso
+    simular1.graficar() #Grafica la lista de procesos
+    reporte=simular1.reporte #Guarda el reporte
+    open("ReporteSimulación.html","w").write(reporte) #Guarda el reporte en un archivo html
 
 def indent(elem, level=0, hor='\t', ver='\n'): # Función para indentar el archivo (solo lo copié y lo pegué xd)
     i = ver + level * hor
@@ -151,14 +174,6 @@ def generarSalida(): #Función que genera el archivo de salida
     with open(ruta,"wb") as doc:
         salida.write(doc,encoding="utf-8",xml_declaration=True)
 
-
-
-
-
-
-
-
-
 def encontrarListaProductosPorMaquina(nombre): #Función que busca la lista de la maquina por nombre
     global listaMaquinas
     for i in range(listaMaquinas.tamaño):
@@ -184,28 +199,12 @@ def encontrarPosMaquinaPorNombre(nombre): #Función que busca la posición de la
             return i
     
 
-def star(): #Función que se encarga de hacer el grafo
-    ruta="ArchivoPrueba.xml"
-    cargarXML(ruta)
-    print(listaMaquinas.tamaño)
-    cargarXML(ruta)
-    print(listaMaquinas.tamaño)
-    #print(listaMaquinas.encontrar(1).listadoProductos.encontrar(1).nombre)
-
-    # Iniciando la simulación
-    print(listaMaquinas.encontrar(0).nombre)
-    print(listaMaquinas.encontrar(0).listadoProductos.encontrar(1).nombre)
-    probando=ap.simulacion(listaMaquinas.encontrar(1),listaMaquinas.encontrar(1).listadoProductos.encontrar(1))
-    
-    #letras=listaMaquinas.encontrar(2).listadoProductos.encontrar(0).elaboracion.split()
-    #primero=letras[0].split("C")
-    #print(primero)
-
-    probando.simular()
 
 #cargarXML("ArchivoPrueba.xml")
 #Estoy simulando el monitor :)
 
+
+#simularPorSegundos("M01PC2","Mouse Inalámbrico",30)
 #simular("M01PC2","Mouse Inalámbrico")
-#generarSalida()
+
 

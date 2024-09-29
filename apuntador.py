@@ -441,7 +441,7 @@ class simulacion:
                 grafo.edge(str(paula),str(i)) # Creo la arista
             paula=i # Guardo el nombre del nodo anterior
         ruta=os.path.join('static','simulacion')
-        grafo.render(ruta, view=True) #Genero el archivo pdf
+        grafo.render(ruta) #Genero el archivo pdf
 
 
 
