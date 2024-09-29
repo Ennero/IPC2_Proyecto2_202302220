@@ -12,15 +12,18 @@ carga=0 #codito para los mensajes alert
 seleccionado=False
 maquina=""
 producto=""
+subido=False
 
 
 def limpiar(): #Inicializa las listas
-    global listaMaquinas, carga, maquina, producto, seleccionado
+    global listaMaquinas, carga, maquina, producto, seleccionado, subido
     listaMaquinas.vaciar()
     carga=0
     maquina=""
     producto=""
     seleccionado=False
+    subido=False
+    
 
 def cargarXML(ruta): 
     global listaMaquinas, carga
@@ -79,19 +82,72 @@ def cargarXML(ruta):
 
 
 def simular(maquina,producto): #Función que simula el proceso
-    global listaMaquinas, salida
+    global listaMaquinas
     print(maquina,producto) #Imprime la máquina y el producto
     maquinita=encontrarMaquinaPorNombre(maquina) #Encuentra la máquina por nombre
     posMaquina=int(encontrarPosMaquinaPorNombre(maquina)) #Encuentra la posición de la máquina por nombre
     productito=encontrarProductoPorNombre(producto,posMaquina) #Encuentra el producto por nombre
     simular1=ap.simulacion(maquinita,productito) #Crea la simulación
     #simular1.simular() #Simula el proceso
-    simular1.simularPorSegundos(21) #Simula el proceso
+    simular1.simularPorSegundos(30) #Simula el proceso
     simular1.reportar() #Reporta el proceso
     simular1.graficar() #Grafica la lista de procesos
     #simular1.reportarConTiempo(22) #Reporta el proceso
 
+def indent(elem, level=0, hor='\t', ver='\n'): # Función para indentar el archivo (solo lo copié y lo pegué xd)
+    i = ver + level * hor
+    if len(elem):
+        if not elem.text or not elem.text.strip():
+            elem.text = i + hor
+        if not elem.tail or not elem.tail.strip():
+            elem.tail = i
+        for elem in elem:
+            indent(elem, level + 1, hor, ver)
+        if not elem.tail or not elem.tail.strip():
+            elem.tail = i
+    else:
+        if level and (not elem.tail or not elem.tail.strip()):
+            elem.tail = i
     
+def generarSalida(): #Función que genera el archivo de salida
+    global listaMaquinas
+    ruta="salida.xml"
+    raiz=ET.Element("SalidaSimulacion")
+    for i in range(listaMaquinas.tamaño):
+        maquina=ET.SubElement(raiz,"Maquina")
+        nombreMaquina=ET.SubElement(maquina,"Nombre")
+        nombreMaquina.text=listaMaquinas.encontrar(i).nombre
+        listadoProductos=ET.SubElement(maquina,"ListadoProductos")
+        for j in range(listaMaquinas.encontrar(i).listadoProductos.tamaño):
+            producto=ET.SubElement(listadoProductos,"Producto")
+            nombreProducto=ET.SubElement(producto,"Nombre")
+            nombreProducto.text=listaMaquinas.encontrar(i).listadoProductos.encontrar(j).nombre
+
+            #Simulo el producto para encontrar el resto de la información
+            simulado=ap.simulacion(listaMaquinas.encontrar(i),listaMaquinas.encontrar(i).listadoProductos.encontrar(j))
+            simulado.simular()
+
+            tiempo=ET.SubElement(producto,"TiempoTotal")
+            tiempo.text=str(simulado.tiempoOptimo)
+            elaboracion=ET.SubElement(producto,"ElaboracionOptima")
+            for k in range(simulado.matriz.tamaño):
+                segundo=ET.SubElement(elaboracion,"Tiempo", NoSegundo=str(simulado.matriz.encontrar(k).encontrar(0)))
+                for l in range(1,simulado.matriz.encontrar(k).tamaño):
+                    linea=ET.SubElement(segundo, "LineaEnsamblaje", NoLinea=str(l))
+                    linea.text=simulado.matriz.encontrar(k).encontrar(l)
+    
+    #Aquí escribo el archivo que acabo de generar
+    salida=ET.ElementTree(raiz)
+    ET.dump(raiz)
+    indent(raiz)
+
+    with open(ruta,"wb") as doc:
+        salida.write(doc,encoding="utf-8",xml_declaration=True)
+
+
+
+
+
 
 
 
@@ -140,9 +196,9 @@ def star(): #Función que se encarga de hacer el grafo
 
     probando.simular()
 
-cargarXML("ArchivoPrueba.xml")
+#cargarXML("ArchivoPrueba.xml")
 #Estoy simulando el monitor :)
 
-simular("Super Máquina 3000","CPU")
-
+#simular("M01PC2","Mouse Inalámbrico")
+#generarSalida()
 

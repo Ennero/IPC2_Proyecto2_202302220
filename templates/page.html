@@ -9,7 +9,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
+        </script>
 
     <style>
         /* Asegúrate de que el body ocupe al menos el 100% de la pantalla */
@@ -50,7 +50,7 @@
             </div>
             <form method="POST">
                 <input type="hidden" name="id" value="inicializar">
-                <button type="submit" class="btn btn-success">Inicializar</button>
+                <button type="submit" class="btn btn-success" {% if not subido %} disabled {% endif %}>Inicializar</button>
             </form>
             <form method="POST">
                 <input type="hidden" name="id" value="cargar">
@@ -59,10 +59,21 @@
 
             <form method="POST">
                 <input type="hidden" name="id" value="generar">
-                <button type="submit" class="btn btn-danger">Generar Archivo de Salida</button>
+                <button type="submit" class="btn btn-danger" {% if not subido %} disabled {% endif %}>Generar Archivo de Salida</button>
             </form>
         </div>
     </nav>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+    {% for category, message in messages %}
+    <div class="alert alert-{{ 'danger' if category == 'error' else 'light' }}" role="alert">
+        {{ message }}
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+
+
 
     <!-- Contenido principal -->
     <div class="content container mt-5">
@@ -76,18 +87,27 @@
                             <form method="POST">
                                 <div class="mb-3">
                                     <label for="maquina" class="form-label">Escoja una Máquina</label>
-                                    <select class="form-select" id="maquina" name="id">
-                                        <option selected>Elegir una Máquina</option>
+                                    <select class="form-select" id="maquina" name="maquina" onchange="this.form.submit()" {% if not subido %} disabled {% endif %}>
                                         
+                                        {% if not seleccionado %}  
+                                        <option selected>Elegir una Máquina</option>
+                                        {% endif %}
+
+
                                         {% for maquina in lista.retornar() %}
+                                        {% if maquinaN==maquina.nombre %}
+                                        <option value="{{ maquina.nombre }}" selected>{{ maquina.nombre }}</option>
+                                        {% else %}
                                         <option value="{{ maquina.nombre }}">{{ maquina.nombre }}</option>
+                                        {% endif %}
                                         {% endfor %}
+
                                     </select>
                                 </div>
-                                <button type="submit" class="btn btn-primary">Aceptar</button>
                             </form>
 
                             <!-- Formulario de productos -->
+                            <br>
                             {% if listaProductos %}
                             <form method="POST">
                                 <div class="mb-3">

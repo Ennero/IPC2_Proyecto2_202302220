@@ -307,7 +307,7 @@ class simulacion:
         self.reporte+='</table>\n'
         print(self.reporte)
 
-    def simularPorSegundos(self,segundos):
+    def simularPorSegundos(self,segundos): #Función para simular el proceso por segundos
         cuenta = 0  # Contador de tiempo
 
         # Mientras haya elementos en la lista de elaboración
@@ -430,7 +430,7 @@ class simulacion:
         #print(self.elaborar.encontrar(0).encontrar(0),self.elaborar.encontrar(0).encontrar(1))
         #self.listaElab.mostrar()
 
-    def graficar(self):
+    def graficar(self): #Función para graficar el proceso
         grafo=graph.Digraph(format='png',name='Proceso de Sumulación')
         grafo.attr('node',shape='rectangle') #Atributo para que los nodos sean rectangulares
         grafo.attr(rankdir='LR') #Atributo para que los nodos se acomoden de izquierda a derecha
@@ -443,7 +443,7 @@ class simulacion:
         ruta=os.path.join('static','simulacion')
         grafo.render(ruta, view=True) #Genero el archivo pdf
 
-#Voy a crear una cosa que cambie el reporte para no tener que complicarme :)
+
 
     
 
