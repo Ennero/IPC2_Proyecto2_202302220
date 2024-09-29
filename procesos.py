@@ -13,17 +13,22 @@ seleccionado=False
 maquina=""
 producto=""
 subido=False
+imagenActiva=False
+simulado=False
 
 
 def limpiar(): #Inicializa las listas
-    global listaMaquinas, carga, maquina, producto, seleccionado, subido
+    global listaMaquinas, carga, maquina, producto, seleccionado, subido, imagenActiva, simulado
     listaMaquinas.vaciar()
     carga=0
     maquina=""
     producto=""
     seleccionado=False
     subido=False
+    imagenActiva=False
+    simulado=False
     
+
 
 def cargarXML(ruta): 
     global listaMaquinas, carga
@@ -87,12 +92,14 @@ def simular(maquina,producto): #Función que simula el proceso
     maquinita=encontrarMaquinaPorNombre(maquina) #Encuentra la máquina por nombre
     posMaquina=int(encontrarPosMaquinaPorNombre(maquina)) #Encuentra la posición de la máquina por nombre
     productito=encontrarProductoPorNombre(producto,posMaquina) #Encuentra el producto por nombre
+
+    #Simulación
     simular1=ap.simulacion(maquinita,productito) #Crea la simulación
-    #simular1.simular() #Simula el proceso
-    simular1.simularPorSegundos(30) #Simula el proceso
+    simular1.simular() #Simula el proceso
+    #simular1.simularPorSegundos(30) #Simula el proceso
     simular1.reportar() #Reporta el proceso
     simular1.graficar() #Grafica la lista de procesos
-    #simular1.reportarConTiempo(22) #Reporta el proceso
+
 
 def indent(elem, level=0, hor='\t', ver='\n'): # Función para indentar el archivo (solo lo copié y lo pegué xd)
     i = ver + level * hor

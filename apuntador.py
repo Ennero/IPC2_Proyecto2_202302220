@@ -290,7 +290,7 @@ class simulacion:
         print(cuenta)
 
     def reportar(self): #Función para reportar el proceso
-        self.reporte='<table style="width:60%; border: 1px solid black; border-collapse: collapse;"\n'
+        self.reporte='<table style="width:100%; border: 1px solid black; border-collapse: collapse;"\n'
         self.reporte+='<tr>\n'
         self.reporte+='<th style="border: 1px solid black; text-align: center; padding: 8px;">Tiempo</th>\n'
         for i in range(self.maquina.lineas):

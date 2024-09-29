@@ -29,12 +29,18 @@ def home(): #Función de la página de inicio
         #Si no se encontró un valor 'id', verifica si se envió el valor de 'maquina'
         maquina = request.form.get('maquina')
 
-        if maquina:  # Verifica si 'maquina' fue enviado en el formulario
-            flash(f'Maquina {maquina} seleccionada', 'success')  # Mensaje de éxito
-            lista = pr.encontrarListaProductosPorMaquina(maquina)  # Busca la lista de productos por máquina
-            pr.seleccionado = True  # Cambia el valor de la variable seleccionado
-            pr.maquina = maquina  # Guarda el valor de la máquina seleccionada
-            return render_template('page.html', lista=pr.listaMaquinas, listaProductos=lista, subido=pr.subido,seleccionado=pr.seleccionado,maquinaN=maquina)  # Mostrar el html de la página
+        if maquina: #Verifica si 'maquina' fue enviado en el formulario
+            flash(f'Maquina {maquina} seleccionada', 'success') #Mensaje de éxito
+            lista = pr.encontrarListaProductosPorMaquina(maquina) #Busca la lista de productos por máquina
+            pr.seleccionado = True #Cambia el valor de la variable seleccionado
+            pr.maquina = maquina #Guarda el valor de la máquina seleccionada
+            return render_template('page.html', lista=pr.listaMaquinas, listaProductos=lista, subido=pr.subido,seleccionado=pr.seleccionado,maquinaN=maquina) #Mostrar el html de la página
+        
+        producto = request.form.get('producto') #Verifica si 'producto' fue enviado en el formulario
+        if producto:
+            flash(f'Producto {producto} seleccionado', 'success') #Mensaje de éxito
+            pr.simular(pr.maquina,producto) #Simula el proceso
+
 
         return redirect(url_for('home'))
     
