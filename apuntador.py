@@ -44,14 +44,6 @@ class listita:  # La listita para las filas
             yield aux.dato  # Retorna el dato del nodo actual
             aux = aux.siguiente
 
-    def modificar(self, pos, dato):  # Para modificar un dato en una posición indicada
-        aux = self.inicio
-        cont = 0
-        while cont < pos:  # Llegando a la posición indicada
-            aux = aux.siguiente
-            cont += 1
-        aux.dato = dato
-
     def encontrar(self, pos):  # Función para encontrar un dato en una posición indicada
         aux = self.inicio
         cont = 0
@@ -59,14 +51,6 @@ class listita:  # La listita para las filas
             aux = aux.siguiente  # Aquí llego a la posición
             cont += 1
         return aux.dato  # Retorno el nodo que deseo
-    
-    def concatenarF(self): #Función para que la fila sea una sola línea
-        aux = self.inicio
-        cadena = ""
-        while aux != None:
-            cadena += str(aux.dato) #proceso de concatenación por cada elemento de la fila
-            aux = aux.siguiente
-        return cadena
 
     def vaciar(self):
         self.inicio = None

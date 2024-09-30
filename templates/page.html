@@ -139,20 +139,19 @@
                                 </div>
                             </div>
                             <br>
+                            <form method="POST">
+                                <label for="segundos" class="form-label">Definir un tiempo <b>t</b></label>
+                                <input type="number" class="form-control" name="segundo" value="{{tiempo}}">
+                                <br>
+                                <button type="submit" class="btn btn-danger">Generar</button>
+                            </form>
+                            <br>
                             <div class="card" >
                                 <div class="card-header">
                                     Grafica de estados de los TDAs
                                 </div>
                                 <img src="static/simulacion.png" class="card-img-top" alt="Simulacion">
                             </div>
-                            <br>
-                            <form method="POST">
-                                <label for="segundos" class="form-label">Definir un tiempo <b>t</b></label>
-                                <input type="number" class="form-control" name="segundo" value="{{tiempo}}">
-                                <br>
-                                <button type="submit" class="btn btn-danger">Generar</button>
-
-                            </form>
 
                             {% endif %}
 

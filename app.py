@@ -16,7 +16,7 @@ def home(): #Función de la página de inicio
         if valor == 'inicializar': #Si lee el valor del botón de inicializar
             pr.limpiar() #Inicializa
             flash('Inicializado con éxito', 'success') #Mensaje de éxito
-            return redirect(url_for('home'))
+            return render_template('page.html', lista=pr.listaMaquinas, subido=pr.subido,seleccionado=pr.seleccionado,maquinaN=pr.maquina,productoN=pr.producto,reporte=pr.reporte,tiempo=pr.tiempoOptimo,listaProductos=pr.lista)
         
         if valor == 'cargar': #Si lee el valor del botón de cargar
             return redirect(url_for('cargar'))
@@ -24,7 +24,7 @@ def home(): #Función de la página de inicio
         if valor == 'generar': #Si lee el valor del botón de generar
             pr.generarSalida() #Genera el archivo de salida
             flash('Archivo de salida generado con éxito', 'success') #Mensaje de éxito
-            return redirect(url_for('home'))
+            return render_template('page.html', lista=pr.listaMaquinas, subido=pr.subido,seleccionado=pr.seleccionado,maquinaN=pr.maquina,productoN=pr.producto,reporte=pr.reporte,tiempo=pr.tiempoOptimo,listaProductos=pr.lista)
 
         #Si no se encontró un valor 'id', verifica si se envió el valor de 'maquina'
         maquina = request.form.get('maquina')
@@ -49,10 +49,10 @@ def home(): #Función de la página de inicio
             pr.simularPorSegundos(pr.maquina,pr.producto,int(segundo)) #Simula el proceso por segundos
             return render_template('page.html', lista=pr.listaMaquinas, subido=pr.subido,seleccionado=pr.seleccionado,maquinaN=pr.maquina,productoN=producto,reporte=pr.reporte,tiempo=pr.tiempoOptimo,listaProductos=pr.lista) #Mostrar el html de la página
 
-        return redirect(url_for('home'))
+        return render_template('page.html', lista=pr.listaMaquinas, subido=pr.subido,seleccionado=pr.seleccionado,maquinaN=pr.maquina,productoN=pr.producto,reporte=pr.reporte,tiempo=pr.tiempoOptimo,listaProductos=pr.lista)
     
     # Para GET o si no hay post-data
-    return render_template('page.html', lista=pr.listaMaquinas, subido=pr.subido,seleccionado=pr.seleccionado)  # Mostrar el html de la página
+    return render_template('page.html', lista=pr.listaMaquinas, subido=pr.subido,seleccionado=pr.seleccionado,maquinaN=pr.maquina,productoN=pr.producto,reporte=pr.reporte,tiempo=pr.tiempoOptimo,listaProductos=pr.lista)  # Mostrar el html de la página
 
 @app.route('/tabla') #Página de tabla
 def tabla():
