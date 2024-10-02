@@ -16,6 +16,7 @@ subido=False
 imagenActiva=False
 simulado=False
 lista=None
+tiempot=False
 
 #Alguna info de la simulación actual
 tiempoOptimo=0
@@ -23,7 +24,7 @@ reporte=""
 
 
 def limpiar(): #Inicializa las listas
-    global listaMaquinas, carga, maquina, producto, seleccionado, subido, imagenActiva, simulado, tiempoOptimo, reporte, lista
+    global listaMaquinas, carga, maquina, producto, seleccionado, subido, imagenActiva, simulado, tiempoOptimo, reporte, lista, tiempot
     listaMaquinas.vaciar()
     carga=0
     maquina=""
@@ -35,6 +36,7 @@ def limpiar(): #Inicializa las listas
     tiempoOptimo=0
     reporte=""
     lista=None
+    tiempot=False
     
 
 

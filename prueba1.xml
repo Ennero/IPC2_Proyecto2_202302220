@@ -13,7 +13,7 @@
                 </elaboracion>
             </Producto>
             <Producto>
-                <nombre>tv hisense</nombre>
+                <nombre>tv Motorola</nombre>
                 <elaboracion>
                     L1C4                 L3C8 L2C11 L1C2 L3C0
                 </elaboracion>
@@ -59,13 +59,13 @@
         </ListadoProductos>
     </Maquina>
     <Maquina>
-        <NombreMaquina> Relojeria </NombreMaquina>
+        <NombreMaquina> Pizzeria </NombreMaquina>
         <CantidadLineasProduccion> 2 </CantidadLineasProduccion>
         <CantidadComponentes>4</CantidadComponentes>
         <TiempoEnsamblaje>1</TiempoEnsamblaje>
         <ListadoProductos>
             <Producto>
-                <nombre>Reloj juguete</nombre>
+                <nombre>Pizza juguete</nombre>
                 <elaboracion>
                 L1C2 L2C1 L2C2 L1C4
                 </elaboracion>
