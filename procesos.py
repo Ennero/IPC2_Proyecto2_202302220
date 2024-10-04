@@ -108,8 +108,9 @@ def simular(maquina,producto): #Función que simula el proceso
     simular1.reportar() #Reporta el proceso
     simular1.graficar() #Grafica la lista de procesos
     tiempoOptimo=simular1.tiempoOptimo #Guarda el tiempo óptimo
-    reporte=simular1.reporte #Guarda el reporte
-    open("ReporteSimulación.html","w").write(reporte) #Guarda el reporte en un archivo html
+    reporte=simular1.reporte #Guarda el reporte #Recorta el reporte para que no se vea la gráfica
+    ayuda='<h1 align="center">REPORTE</h1>'
+    open("ReporteSimulación.html","w").write(ayuda+reporte) #Guarda el reporte en un archivo html
 
 def simularPorSegundos(maquina,producto,segundo): #Función que simula el proceso por segundos
     global listaMaquinas, tiempoOptimo, reporte, simulado
@@ -124,7 +125,9 @@ def simularPorSegundos(maquina,producto,segundo): #Función que simula el proces
     simular1.reportar() #Reporta el proceso
     simular1.graficar() #Grafica la lista de procesos
     reporte=simular1.reporte #Guarda el reporte
-    open("ReporteSimulación.html","w").write(reporte) #Guarda el reporte en un archivo html
+    ayuda='<h1 align="center">REPORTE</h1>'
+    open("ReporteSimulación.html","w").write(ayuda+reporte) #Guarda el reporte en un archivo html
+
 
 def indent(elem, level=0, hor='\t', ver='\n'): # Función para indentar el archivo (solo lo copié y lo pegué xd)
     i = ver + level * hor

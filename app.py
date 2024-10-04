@@ -38,7 +38,7 @@ def home(): #Función de la página de inicio
         
         producto = request.form.get('producto') #Verifica si 'producto' fue enviado en el formulario
         if producto:
-            flash(f'Simulación optima de maquina {pr.maquina} con el producto {producto}', 'success') #Mensaje de éxito
+            flash(f'Simulación optima de maquina {maquina} con el producto {producto}', 'success') #Mensaje de éxito
             pr.producto = producto #Guarda el valor del producto seleccionado
             pr.simular(pr.maquina,pr.producto) #Simula el proceso
             return render_template('page.html', lista=pr.listaMaquinas, subido=pr.subido,seleccionado=pr.seleccionado,maquinaN=pr.maquina,productoN=producto,reporte=pr.reporte,tiempo=pr.tiempoOptimo,listaProductos=pr.lista) #Mostrar el html de la página
@@ -85,6 +85,7 @@ def cargar():
                 flash('Se modificaron maquinas existentes', 'success')
         return redirect(url_for('home'))
     return render_template('ruta.html')
+
 
 
 if __name__ == '__main__':
