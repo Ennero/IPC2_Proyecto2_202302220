@@ -41,7 +41,7 @@ def home(): #Función de la página de inicio
             flash(f'Simulación optima de maquina {pr.maquina} con el producto {producto}', 'success') #Mensaje de éxito
             pr.producto = producto #Guarda el valor del producto seleccionado
             pr.simular(pr.maquina,pr.producto) #Simula el proceso
-            return render_template('page.html', lista=pr.listaMaquinas, subido=pr.subido,seleccionado=pr.seleccionado,maquinaN=pr.maquina,productoN=producto,reporte=pr.reporte,tiempo=pr.tiempoOptimo,listaProductos=pr.lista) #Mostrar el html de la página
+            return render_template('page.html', lista=pr.listaMaquinas, subido=pr.subido,seleccionado=pr.seleccionado,maquinaN=pr.maquina,productoN=pr.producto,reporte=pr.reporte,tiempo=pr.tiempoOptimo,listaProductos=pr.lista) #Mostrar el html de la página
             
         segundo=request.form.get('segundo') #Verifica si 'tiempo' fue enviado en el formulario
         if segundo:
@@ -51,7 +51,7 @@ def home(): #Función de la página de inicio
                 pr.simular(pr.maquina,pr.producto)
             else:
                 pr.simularPorSegundos(pr.maquina,pr.producto,int(segundo)) #Simula el proceso por segundos
-            return render_template('page.html', lista=pr.listaMaquinas, subido=pr.subido,seleccionado=pr.seleccionado,maquinaN=pr.maquina,productoN=producto,reporte=pr.reporte,tiempo=pr.tiempoOptimo,listaProductos=pr.lista,tiempot=pr.tiempot) #Mostrar el html de la página
+            return render_template('page.html', lista=pr.listaMaquinas, subido=pr.subido,seleccionado=pr.seleccionado,maquinaN=pr.maquina,productoN=pr.producto,reporte=pr.reporte,tiempo=pr.tiempoOptimo,listaProductos=pr.lista,tiempot=pr.tiempot) #Mostrar el html de la página
 
         return render_template('page.html', lista=pr.listaMaquinas, subido=pr.subido,seleccionado=pr.seleccionado,maquinaN=pr.maquina,productoN=pr.producto,reporte=pr.reporte,tiempo=pr.tiempoOptimo,listaProductos=pr.lista,tiempot=pr.tiempot)
     
