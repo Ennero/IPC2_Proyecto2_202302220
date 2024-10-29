@@ -1,5 +1,7 @@
 digraph "Proceso de Sumulación" {
 	node [shape=rectangle]
 	rankdir=LR
-	0 [label=L3C8]
+	0 [label=L2C4]
+	1 [label=L5C3]
+	0 -> 1
 }

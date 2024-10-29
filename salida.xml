@@ -1,597 +1,619 @@
 <?xml version='1.0' encoding='utf-8'?>
 <SalidaSimulacion>
 	<Maquina>
-		<Nombre> Relojeria </Nombre>
+		<Nombre>MC01IPC2</Nombre>
 		<ListadoProductos>
 			<Producto>
-				<Nombre>Reloj juguete</Nombre>
-				<TiempoTotal>7</TiempoTotal>
-				<ElaboracionOptima>
-					<Tiempo NoSegundo="1">
-						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 1</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 1</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="2">
-						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 2</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="3">
-						<LineaEnsamblaje NoLinea="1">Ensamblar componente 2</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="4">
-						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 3</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 1</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="5">
-						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 4</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 2</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="6">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 2</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="7">
-						<LineaEnsamblaje NoLinea="1">Ensamblar componente 4</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-				</ElaboracionOptima>
-			</Producto>
-		</ListadoProductos>
-	</Maquina>
-	<Maquina>
-		<Nombre> TelevisoresPro </Nombre>
-		<ListadoProductos>
-			<Producto>
-				<Nombre> tv samsung </Nombre>
-				<TiempoTotal>26</TiempoTotal>
+				<Nombre>Reloj</Nombre>
+				<TiempoTotal>34</TiempoTotal>
 				<ElaboracionOptima>
 					<Tiempo NoSegundo="1">
 						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 1</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 1</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 1</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">Mover brazo - componente 1</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">Mover brazo - componente 1</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">Mover brazo - componente 1</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Mover brazo - componente 1</LineaEnsamblaje>
 					</Tiempo>
 					<Tiempo NoSegundo="2">
 						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 2</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 2</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 2</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">Mover brazo - componente 2</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">Mover brazo - componente 2</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">No hacer nada</LineaEnsamblaje>
 					</Tiempo>
 					<Tiempo NoSegundo="3">
 						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 3</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 3</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 3</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">Mover brazo - componente 3</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">No hacer nada</LineaEnsamblaje>
 					</Tiempo>
 					<Tiempo NoSegundo="4">
-						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 4</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="1">Ensamblar componente 3</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 4</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 4</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">Mover brazo - componente 4</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">No hacer nada</LineaEnsamblaje>
 					</Tiempo>
 					<Tiempo NoSegundo="5">
-						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 5</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="1">Ensamblar componente 3</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 5</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 5</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">Mover brazo - componente 5</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">No hacer nada</LineaEnsamblaje>
 					</Tiempo>
 					<Tiempo NoSegundo="6">
-						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 6</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 5</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 2</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 6</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">Ensamblar componente 2</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">Mover brazo - componente 6</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">No hacer nada</LineaEnsamblaje>
 					</Tiempo>
 					<Tiempo NoSegundo="7">
 						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 5</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="8">
-						<LineaEnsamblaje NoLinea="1">Ensamblar componente 6</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 6</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="9">
-						<LineaEnsamblaje NoLinea="1">Ensamblar componente 6</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 7</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">Ensamblar componente 2</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">No hacer nada</LineaEnsamblaje>
 					</Tiempo>
-					<Tiempo NoSegundo="10">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+					<Tiempo NoSegundo="8">
+						<LineaEnsamblaje NoLinea="1">Ensamblar componente 2</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 8</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">No hacer nada</LineaEnsamblaje>
 					</Tiempo>
-					<Tiempo NoSegundo="11">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+					<Tiempo NoSegundo="9">
+						<LineaEnsamblaje NoLinea="1">Ensamblar componente 2</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 9</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">No hacer nada</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="10">
+						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 3</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 10</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">Ensamblar componente 5</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">No hacer nada</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="11">
+						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 4</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 11</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">Ensamblar componente 5</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">No hacer nada</LineaEnsamblaje>
 					</Tiempo>
 					<Tiempo NoSegundo="12">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 10</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="13">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 11</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="14">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 5</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 12</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="15">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 12</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="16">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 12</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="17">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 4</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="18">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 4</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="19">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 5</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="20">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 6</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="21">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 7</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="22">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 8</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="23">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 9</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="24">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 10</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="25">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 10</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="26">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 10</LineaEnsamblaje>
-					</Tiempo>
-				</ElaboracionOptima>
-			</Producto>
-			<Producto>
-				<Nombre>tv Motorola</Nombre>
-				<TiempoTotal>20</TiempoTotal>
-				<ElaboracionOptima>
-					<Tiempo NoSegundo="1">
-						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 1</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 1</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 1</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="2">
-						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 2</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 2</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 2</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="3">
-						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 3</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 3</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 3</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="4">
-						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 4</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 4</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 4</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="5">
-						<LineaEnsamblaje NoLinea="1">Ensamblar componente 4</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 5</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 5</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="6">
-						<LineaEnsamblaje NoLinea="1">Ensamblar componente 4</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 6</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 6</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="7">
-						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 3</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 7</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 7</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="8">
-						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 2</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 8</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 8</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="9">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 9</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 8</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="10">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 10</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 8</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="11">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 11</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 7</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="12">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 11</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 6</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">Ensamblar componente 6</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">No hacer nada</LineaEnsamblaje>
 					</Tiempo>
 					<Tiempo NoSegundo="13">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 11</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 5</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="14">
-						<LineaEnsamblaje NoLinea="1">Ensamblar componente 2</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 4</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="15">
-						<LineaEnsamblaje NoLinea="1">Ensamblar componente 2</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 3</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="16">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 2</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="17">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 1</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="18">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 0</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="19">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 0</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="20">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 0</LineaEnsamblaje>
-					</Tiempo>
-				</ElaboracionOptima>
-			</Producto>
-			<Producto>
-				<Nombre>televisión LG</Nombre>
-				<TiempoTotal>24</TiempoTotal>
-				<ElaboracionOptima>
-					<Tiempo NoSegundo="1">
-						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 1</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 1</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 1</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="2">
-						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 2</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 2</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="3">
-						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 3</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 3</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="4">
-						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 4</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 4</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="5">
-						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 5</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 5</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="6">
 						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 6</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 5</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 13</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">Ensamblar componente 6</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">No hacer nada</LineaEnsamblaje>
 					</Tiempo>
-					<Tiempo NoSegundo="7">
+					<Tiempo NoSegundo="14">
 						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 7</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 5</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 14</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="8">
-						<LineaEnsamblaje NoLinea="1">Ensamblar componente 7</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 6</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="9">
-						<LineaEnsamblaje NoLinea="1">Ensamblar componente 7</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 7</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="10">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 8</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 1</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="11">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 9</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 1</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="12">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 9</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 2</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="13">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 9</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 3</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="14">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 4</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Ensamblar componente 1</LineaEnsamblaje>
 					</Tiempo>
 					<Tiempo NoSegundo="15">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 8</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 5</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Ensamblar componente 1</LineaEnsamblaje>
 					</Tiempo>
 					<Tiempo NoSegundo="16">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 6</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 9</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Ensamblar componente 14</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Mover brazo - componente 2</LineaEnsamblaje>
 					</Tiempo>
 					<Tiempo NoSegundo="17">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 7</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 10</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Ensamblar componente 14</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Mover brazo - componente 3</LineaEnsamblaje>
 					</Tiempo>
 					<Tiempo NoSegundo="18">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 11</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 8</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Mover brazo - componente 4</LineaEnsamblaje>
 					</Tiempo>
 					<Tiempo NoSegundo="19">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 12</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 9</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Mover brazo - componente 5</LineaEnsamblaje>
 					</Tiempo>
 					<Tiempo NoSegundo="20">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 13</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 10</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Mover brazo - componente 6</LineaEnsamblaje>
 					</Tiempo>
 					<Tiempo NoSegundo="21">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 14</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 11</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Mover brazo - componente 7</LineaEnsamblaje>
 					</Tiempo>
 					<Tiempo NoSegundo="22">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 15</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 12</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Mover brazo - componente 8</LineaEnsamblaje>
 					</Tiempo>
 					<Tiempo NoSegundo="23">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="1">Ensamblar componente 15</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 12</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Mover brazo - componente 9</LineaEnsamblaje>
 					</Tiempo>
 					<Tiempo NoSegundo="24">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 12</LineaEnsamblaje>
-					</Tiempo>
-				</ElaboracionOptima>
-			</Producto>
-		</ListadoProductos>
-	</Maquina>
-	<Maquina>
-		<Nombre> Consolas360 </Nombre>
-		<ListadoProductos>
-			<Producto>
-				<Nombre> Nintendo Switch </Nombre>
-				<TiempoTotal>28</TiempoTotal>
-				<ElaboracionOptima>
-					<Tiempo NoSegundo="1">
-						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 1</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 1</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 1</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="2">
-						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 2</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 2</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 2</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="3">
-						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 3</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 3</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 3</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="4">
-						<LineaEnsamblaje NoLinea="1">Ensamblar componente 3</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 4</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 4</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="5">
-						<LineaEnsamblaje NoLinea="1">Ensamblar componente 3</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 5</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 5</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="6">
-						<LineaEnsamblaje NoLinea="1">Ensamblar componente 3</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 6</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 6</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="7">
-						<LineaEnsamblaje NoLinea="1">Ensamblar componente 3</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 7</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="8">
-						<LineaEnsamblaje NoLinea="1">Ensamblar componente 3</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="1">Ensamblar componente 15</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="9">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 6</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="10">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 6</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="11">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 6</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="12">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 6</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="13">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 6</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="14">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 5</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">Ensamblar componente 0</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="15">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 4</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">Ensamblar componente 0</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="16">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 3</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">Ensamblar componente 0</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="17">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 2</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">Ensamblar componente 0</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="18">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">Ensamblar componente 0</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="19">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 7</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="20">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 7</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="21">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 7</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="22">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 7</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="23">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 7</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="24">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 2</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Mover brazo - componente 10</LineaEnsamblaje>
 					</Tiempo>
 					<Tiempo NoSegundo="25">
 						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 2</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Mover brazo - componente 11</LineaEnsamblaje>
 					</Tiempo>
 					<Tiempo NoSegundo="26">
 						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 2</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Mover brazo - componente 12</LineaEnsamblaje>
 					</Tiempo>
 					<Tiempo NoSegundo="27">
 						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 2</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Mover brazo - componente 13</LineaEnsamblaje>
 					</Tiempo>
 					<Tiempo NoSegundo="28">
 						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 2</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Mover brazo - componente 14</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="29">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Mover brazo - componente 15</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="30">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Mover brazo - componente 16</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="31">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Ensamblar componente 16</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="32">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Ensamblar componente 16</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="33">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">Ensamblar componente 1</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">No hacer nada</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="34">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">Ensamblar componente 1</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">No hacer nada</LineaEnsamblaje>
 					</Tiempo>
 				</ElaboracionOptima>
 			</Producto>
 			<Producto>
-				<Nombre>PS5</Nombre>
-				<TiempoTotal>29</TiempoTotal>
+				<Nombre>Cable</Nombre>
+				<TiempoTotal>13</TiempoTotal>
+				<ElaboracionOptima>
+					<Tiempo NoSegundo="1">
+						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 1</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 1</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">Mover brazo - componente 1</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Mover brazo - componente 1</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="2">
+						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 2</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 2</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">Mover brazo - componente 2</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Mover brazo - componente 2</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="3">
+						<LineaEnsamblaje NoLinea="1">Ensamblar componente 2</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 3</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">Mover brazo - componente 3</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Mover brazo - componente 3</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="4">
+						<LineaEnsamblaje NoLinea="1">Ensamblar componente 2</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 4</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">No hacer nada</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="5">
+						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 1</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">No hacer nada</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="6">
+						<LineaEnsamblaje NoLinea="1">Ensamblar componente 1</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">No hacer nada</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="7">
+						<LineaEnsamblaje NoLinea="1">Ensamblar componente 1</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">No hacer nada</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="8">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Ensamblar componente 3</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="9">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Ensamblar componente 3</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="10">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Ensamblar componente 4</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">No hacer nada</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="11">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Ensamblar componente 4</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">No hacer nada</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="12">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">Ensamblar componente 3</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">No hacer nada</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="13">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">Ensamblar componente 3</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">No hacer nada</LineaEnsamblaje>
+					</Tiempo>
+				</ElaboracionOptima>
+			</Producto>
+			<Producto>
+				<Nombre>Mouse</Nombre>
+				<TiempoTotal>18</TiempoTotal>
+				<ElaboracionOptima>
+					<Tiempo NoSegundo="1">
+						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 1</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 1</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 1</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Mover brazo - componente 1</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="2">
+						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 2</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 2</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 2</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Mover brazo - componente 2</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="3">
+						<LineaEnsamblaje NoLinea="1">Ensamblar componente 2</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 3</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Mover brazo - componente 3</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="4">
+						<LineaEnsamblaje NoLinea="1">Ensamblar componente 2</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Mover brazo - componente 4</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="5">
+						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 3</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Ensamblar componente 3</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Mover brazo - componente 5</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="6">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Ensamblar componente 3</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Mover brazo - componente 6</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="7">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">Ensamblar componente 2</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Mover brazo - componente 7</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="8">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">Ensamblar componente 2</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Mover brazo - componente 8</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="9">
+						<LineaEnsamblaje NoLinea="1">Ensamblar componente 3</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Mover brazo - componente 9</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="10">
+						<LineaEnsamblaje NoLinea="1">Ensamblar componente 3</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Mover brazo - componente 10</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="11">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Mover brazo - componente 11</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="12">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Mover brazo - componente 12</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="13">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Mover brazo - componente 13</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="14">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Mover brazo - componente 14</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="15">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Mover brazo - componente 15</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="16">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Mover brazo - componente 16</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="17">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Ensamblar componente 16</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="18">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="5">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="6">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="7">Ensamblar componente 16</LineaEnsamblaje>
+					</Tiempo>
+				</ElaboracionOptima>
+			</Producto>
+		</ListadoProductos>
+	</Maquina>
+	<Maquina>
+		<Nombre>FabricaXpress</Nombre>
+		<ListadoProductos>
+			<Producto>
+				<Nombre>Laptops</Nombre>
+				<TiempoTotal>7</TiempoTotal>
 				<ElaboracionOptima>
 					<Tiempo NoSegundo="1">
 						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 1</LineaEnsamblaje>
@@ -600,607 +622,407 @@
 						<LineaEnsamblaje NoLinea="4">Mover brazo - componente 1</LineaEnsamblaje>
 					</Tiempo>
 					<Tiempo NoSegundo="2">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 2</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Ensamblar componente 1</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 2</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">Mover brazo - componente 2</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="3">
+						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 3</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 3</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">Mover brazo - componente 3</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="4">
+						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 4</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 4</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">Ensamblar componente 3</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="5">
+						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 5</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 5</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="6">
+						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 6</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">Ensamblar componente 5</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="7">
+						<LineaEnsamblaje NoLinea="1">Ensamblar componente 6</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+					</Tiempo>
+				</ElaboracionOptima>
+			</Producto>
+			<Producto>
+				<Nombre>Teléfonos móviles</Nombre>
+				<TiempoTotal>8</TiempoTotal>
+				<ElaboracionOptima>
+					<Tiempo NoSegundo="1">
+						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 1</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 1</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 1</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">Mover brazo - componente 1</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="2">
+						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 2</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 2</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 2</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="4">Mover brazo - componente 2</LineaEnsamblaje>
 					</Tiempo>
 					<Tiempo NoSegundo="3">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 3</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 3</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 3</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="4">Mover brazo - componente 3</LineaEnsamblaje>
 					</Tiempo>
 					<Tiempo NoSegundo="4">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="1">Ensamblar componente 3</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 4</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 4</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="4">Mover brazo - componente 4</LineaEnsamblaje>
 					</Tiempo>
 					<Tiempo NoSegundo="5">
 						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 5</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 4</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">Ensamblar componente 2</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="4">Mover brazo - componente 5</LineaEnsamblaje>
 					</Tiempo>
 					<Tiempo NoSegundo="6">
 						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 6</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 4</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">Mover brazo - componente 6</LineaEnsamblaje>
 					</Tiempo>
 					<Tiempo NoSegundo="7">
 						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 7</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 4</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">Ensamblar componente 6</LineaEnsamblaje>
 					</Tiempo>
 					<Tiempo NoSegundo="8">
 						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 4</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="9">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 4</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="10">
-						<LineaEnsamblaje NoLinea="1">Ensamblar componente 1</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 3</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="11">
-						<LineaEnsamblaje NoLinea="1">Ensamblar componente 1</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 2</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="12">
-						<LineaEnsamblaje NoLinea="1">Ensamblar componente 1</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Ensamblar componente 5</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="13">
-						<LineaEnsamblaje NoLinea="1">Ensamblar componente 1</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="14">
-						<LineaEnsamblaje NoLinea="1">Ensamblar componente 1</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="15">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">Ensamblar componente 5</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="16">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">Ensamblar componente 5</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="17">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">Ensamblar componente 5</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="18">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">Ensamblar componente 5</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="19">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">Ensamblar componente 5</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="20">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 7</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="21">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 7</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="22">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 7</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="23">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 7</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="24">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 7</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="25">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 2</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="26">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 2</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="27">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 2</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="28">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 2</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="29">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 2</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
 					</Tiempo>
 				</ElaboracionOptima>
 			</Producto>
 			<Producto>
-				<Nombre>televisión LG</Nombre>
-				<TiempoTotal>36</TiempoTotal>
+				<Nombre>Televisores</Nombre>
+				<TiempoTotal>8</TiempoTotal>
 				<ElaboracionOptima>
 					<Tiempo NoSegundo="1">
 						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 1</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 1</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 1</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="2">
-						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 2</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 2</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="3">
-						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 3</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 3</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="4">
-						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 4</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 4</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="5">
-						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 5</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 5</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="6">
-						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 6</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 5</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="7">
-						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 7</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 5</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="8">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 5</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="9">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 5</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="10">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 5</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="11">
-						<LineaEnsamblaje NoLinea="1">Ensamblar componente 7</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 6</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="12">
-						<LineaEnsamblaje NoLinea="1">Ensamblar componente 7</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 7</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="13">
-						<LineaEnsamblaje NoLinea="1">Ensamblar componente 7</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 8</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="14">
-						<LineaEnsamblaje NoLinea="1">Ensamblar componente 7</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 9</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="15">
-						<LineaEnsamblaje NoLinea="1">Ensamblar componente 7</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="16">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 1</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="17">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 1</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="18">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 1</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="19">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 1</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="20">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 1</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="21">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 9</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 2</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="22">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 9</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 3</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="23">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 9</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 4</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="24">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 9</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 5</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="25">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 9</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 6</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="26">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 7</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="27">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 8</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="28">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 9</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="29">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 10</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="30">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 11</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="31">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 12</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="32">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 12</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="33">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 12</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="34">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 12</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="35">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 12</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="36">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 12</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-				</ElaboracionOptima>
-			</Producto>
-			<Producto>
-				<Nombre>Xbox</Nombre>
-				<TiempoTotal>28</TiempoTotal>
-				<ElaboracionOptima>
-					<Tiempo NoSegundo="1">
-						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 1</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 1</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="4">Mover brazo - componente 1</LineaEnsamblaje>
 					</Tiempo>
 					<Tiempo NoSegundo="2">
-						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 2</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 2</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 2</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="4">Mover brazo - componente 2</LineaEnsamblaje>
 					</Tiempo>
 					<Tiempo NoSegundo="3">
-						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 3</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 3</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="4">Mover brazo - componente 3</LineaEnsamblaje>
 					</Tiempo>
 					<Tiempo NoSegundo="4">
-						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 4</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">Ensamblar componente 3</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 4</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">Mover brazo - componente 4</LineaEnsamblaje>
 					</Tiempo>
 					<Tiempo NoSegundo="5">
-						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 5</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">Ensamblar componente 3</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">Ensamblar componente 4</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">Mover brazo - componente 5</LineaEnsamblaje>
 					</Tiempo>
 					<Tiempo NoSegundo="6">
-						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 6</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="1">Ensamblar componente 1</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">Ensamblar componente 3</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
 					</Tiempo>
 					<Tiempo NoSegundo="7">
 						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Ensamblar componente 2</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">Ensamblar componente 3</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
 					</Tiempo>
 					<Tiempo NoSegundo="8">
 						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">Ensamblar componente 3</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="9">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 0</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">Mover brazo - componente 2</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="10">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 0</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="11">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 0</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="12">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 0</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="13">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 0</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="14">
-						<LineaEnsamblaje NoLinea="1">Ensamblar componente 6</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="15">
-						<LineaEnsamblaje NoLinea="1">Ensamblar componente 6</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="16">
-						<LineaEnsamblaje NoLinea="1">Ensamblar componente 6</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="17">
-						<LineaEnsamblaje NoLinea="1">Ensamblar componente 6</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="18">
-						<LineaEnsamblaje NoLinea="1">Ensamblar componente 6</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="19">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">Ensamblar componente 2</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="20">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">Ensamblar componente 2</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="21">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">Ensamblar componente 2</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="22">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">Ensamblar componente 2</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="23">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">Ensamblar componente 2</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="24">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 1</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="25">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 1</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="26">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 1</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="27">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 1</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="28">
-						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="3">Ensamblar componente 1</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="4">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="4">Ensamblar componente 5</LineaEnsamblaje>
 					</Tiempo>
 				</ElaboracionOptima>
 			</Producto>
 		</ListadoProductos>
 	</Maquina>
 	<Maquina>
-		<Nombre> Pizzeria </Nombre>
+		<Nombre>ObjecTek</Nombre>
 		<ListadoProductos>
 			<Producto>
-				<Nombre>Pizza juguete</Nombre>
-				<TiempoTotal>7</TiempoTotal>
+				<Nombre>Refrigeradores</Nombre>
+				<TiempoTotal>11</TiempoTotal>
+				<ElaboracionOptima>
+					<Tiempo NoSegundo="1">
+						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 1</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 1</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 1</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="2">
+						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 2</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 2</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="3">
+						<LineaEnsamblaje NoLinea="1">Ensamblar componente 2</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 3</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="4">
+						<LineaEnsamblaje NoLinea="1">Ensamblar componente 2</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="5">
+						<LineaEnsamblaje NoLinea="1">Ensamblar componente 2</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="6">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">Ensamblar componente 1</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="7">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">Ensamblar componente 1</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="8">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">Ensamblar componente 1</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="9">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Ensamblar componente 3</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="10">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Ensamblar componente 3</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="11">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Ensamblar componente 3</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+					</Tiempo>
+				</ElaboracionOptima>
+			</Producto>
+			<Producto>
+				<Nombre>Lavadoras</Nombre>
+				<TiempoTotal>13</TiempoTotal>
+				<ElaboracionOptima>
+					<Tiempo NoSegundo="1">
+						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 1</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 1</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 1</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="2">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 2</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 2</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="3">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 3</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">Mover brazo - componente 3</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="4">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 4</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="5">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Ensamblar componente 4</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="6">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Ensamblar componente 4</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="7">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Ensamblar componente 4</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="8">
+						<LineaEnsamblaje NoLinea="1">Ensamblar componente 1</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="9">
+						<LineaEnsamblaje NoLinea="1">Ensamblar componente 1</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="10">
+						<LineaEnsamblaje NoLinea="1">Ensamblar componente 1</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">No hacer nada</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="11">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">Ensamblar componente 3</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="12">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">Ensamblar componente 3</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="13">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="3">Ensamblar componente 3</LineaEnsamblaje>
+					</Tiempo>
+				</ElaboracionOptima>
+			</Producto>
+		</ListadoProductos>
+	</Maquina>
+	<Maquina>
+		<Nombre>TecnoMachine</Nombre>
+		<ListadoProductos>
+			<Producto>
+				<Nombre>UPS</Nombre>
+				<TiempoTotal>19</TiempoTotal>
 				<ElaboracionOptima>
 					<Tiempo NoSegundo="1">
 						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 1</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 1</LineaEnsamblaje>
 					</Tiempo>
 					<Tiempo NoSegundo="2">
-						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 2</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="3">
-						<LineaEnsamblaje NoLinea="1">Ensamblar componente 2</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="4">
-						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 3</LineaEnsamblaje>
-						<LineaEnsamblaje NoLinea="2">Ensamblar componente 1</LineaEnsamblaje>
-					</Tiempo>
-					<Tiempo NoSegundo="5">
-						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 4</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 2</LineaEnsamblaje>
 					</Tiempo>
-					<Tiempo NoSegundo="6">
+					<Tiempo NoSegundo="3">
 						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="2">Ensamblar componente 2</LineaEnsamblaje>
 					</Tiempo>
+					<Tiempo NoSegundo="4">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Ensamblar componente 2</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="5">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Ensamblar componente 2</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="6">
+						<LineaEnsamblaje NoLinea="1">Ensamblar componente 1</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 3</LineaEnsamblaje>
+					</Tiempo>
 					<Tiempo NoSegundo="7">
+						<LineaEnsamblaje NoLinea="1">Ensamblar componente 1</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="8">
+						<LineaEnsamblaje NoLinea="1">Ensamblar componente 1</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="9">
+						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 2</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Ensamblar componente 3</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="10">
+						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 3</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Ensamblar componente 3</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="11">
+						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 4</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Ensamblar componente 3</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="12">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 4</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="13">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Mover brazo - componente 5</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="14">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Ensamblar componente 5</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="15">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Ensamblar componente 5</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="16">
+						<LineaEnsamblaje NoLinea="1">No hacer nada</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">Ensamblar componente 5</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="17">
 						<LineaEnsamblaje NoLinea="1">Ensamblar componente 4</LineaEnsamblaje>
 						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="18">
+						<LineaEnsamblaje NoLinea="1">Ensamblar componente 4</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="19">
+						<LineaEnsamblaje NoLinea="1">Ensamblar componente 4</LineaEnsamblaje>
+						<LineaEnsamblaje NoLinea="2">No hacer nada</LineaEnsamblaje>
+					</Tiempo>
+				</ElaboracionOptima>
+			</Producto>
+		</ListadoProductos>
+	</Maquina>
+	<Maquina>
+		<Nombre>esreveR</Nombre>
+		<ListadoProductos>
+			<Producto>
+				<Nombre>Switch</Nombre>
+				<TiempoTotal>8</TiempoTotal>
+				<ElaboracionOptima>
+					<Tiempo NoSegundo="1">
+						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 1</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="2">
+						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 2</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="3">
+						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 3</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="4">
+						<LineaEnsamblaje NoLinea="1">Ensamblar componente 3</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="5">
+						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 2</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="6">
+						<LineaEnsamblaje NoLinea="1">Ensamblar componente 2</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="7">
+						<LineaEnsamblaje NoLinea="1">Mover brazo - componente 1</LineaEnsamblaje>
+					</Tiempo>
+					<Tiempo NoSegundo="8">
+						<LineaEnsamblaje NoLinea="1">Ensamblar componente 1</LineaEnsamblaje>
 					</Tiempo>
 				</ElaboracionOptima>
 			</Producto>
