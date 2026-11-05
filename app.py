@@ -1,10 +1,12 @@
+import os
+import secrets
 from flask import Flask, render_template, request, redirect, url_for, flash
 import procesos as pr
 
 
 
 app = Flask(__name__)
-app.secret_key = 'my_secret_key'  # Clave secreta que no sé para qué sirve
+app.secret_key = os.environ.get("FLASK_SECRET_KEY") or secrets.token_hex(32)
 
 
 
@@ -60,7 +62,7 @@ def home(): #Función de la página de inicio
 
 @app.route('/tabla') #Página de tabla
 def tabla():
-    return render_template('mostrartabla.html')
+    return redirect(url_for('home'))
 
 @app.route('/acercade') #Página de acerca de
 def acercade():
@@ -89,4 +91,4 @@ def cargar():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=os.environ.get("FLASK_DEBUG") == "1")
